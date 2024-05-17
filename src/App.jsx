@@ -10,7 +10,6 @@ export function App() {
   const [searchInput, setSearchInput] = useState('');
   const [errorCity, setErrorCity] = useState(false);
   var timeOut;
-
   
   function getWeather( city ) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ city }&units=metric&lang=ua&appid=${API_KEY}`)
